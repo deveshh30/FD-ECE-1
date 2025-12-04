@@ -9,18 +9,42 @@ html,body{
 }
 
 
-.child{
-    height: 300px;
-    width: 300px;
-    border: 4px solid rgb(124, 124, 255);
-    text-align: center;
-    align-content: center;
-    color: wheat;
-    background-color: #111;
-    margin: 0px;
+.parent{
+    display: grid;
+    height: 500px;
+    width: 1000px;
+    background-color: aqua;
+    border: 1px solid black;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "header header header header" "main main . sidebar" "footer footer footer footer";
+    justify-items: stretch;
+
 }
 
-.parent{
-    background-color: gray;
-    margin: 0;
+.child{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border: 1px solid black;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.item1{
+    grid-area: header;
+}
+
+.item2{
+    grid-area: main;
+}
+
+.item3{
+    grid-area: sidebar;
+}
+
+.item4{
+    grid-area: footer;
 }
