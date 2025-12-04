@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.child{
+    height: 300px;
+    width: 300px;
+    border: 4px solid rgb(124, 124, 255);
+    text-align: center;
+    align-content: center;
+    color: wheat;
+    background-color: #111;
+    margin: 0px;
+}
+
+.parent{
+    background-color: gray;
+    margin: 0;
+}
